@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .work-sans{
+            font-family: "Work Sans", serif;}
+    </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'natural': '#179800',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="work-sans">
+    <!-- header -->
+    <header class="">
+        <nav class="md:container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">
+                    <img src="./c2-assets/logo-header.png" alt="">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 ">
+                    <li class="hidden lg:inline"><a>Product</a></li>
+                    <li class="hidden lg:inline"><a>Services</a></li>
+                    <li class="hidden lg:inline"><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                <div class="hidden lg:inline">
+                  <i class="fa-solid fa-magnifying-glass Class mr-4 "></i>
+                  <i class="fa-solid fa-cart-shopping  mr-4 "></i>
+                <a class="btn  mr-2 px-7 border-green-800 font-bold bg-white ">login</a>
+                <a class="btn bg-natural text-white ">Register</a>
+                </div>
+                </div>
+              </div>
+        </nav>
+        <div class="banner bg-gradient-to-b  from-[#FFFFFF] to-[#EFEBE3]">
+          <div class="banner_container md:container mx-auto py-0 pt-24">
+            <div class=" text-center mb-8">
+                <h1 class="text-4xl md:text-4xl font-bold mb-8 ">Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                <p class="lg:max-w-xl max-w-sm mx-auto ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class=" ">
+              <img src="./c2-assets/hero-vegetables.png" class="mx-auto " alt="">
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- main -->
+     <main>
+     <section class="md:container mx-auto py-8 lg:pl-24">
+      <div class="box_container ">
+        <div class="">
+          <h3 class="text-2xl md:text-2xl lg:text-4xl text-natural font-bold mb-8 pl-5 lg:pl-0">Services</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+          <div class="rounded-lg shadow-md bg-[#EFEBE3] overflow-hidden mx-4 lg:mx-0 pt-4">
+            <img class="mx-auto " src="./c2-assets/sarvice.png" alt="">
+
+            <div class="p-4 ">
+              <h4 class="font-bold text-xl pb-3">24/7 Services </h4>
+              <p class="pb-3">Order Healthy Food delivery online from 24/7 Vegetables & groceries in Dhaka</p>
+            </div>
+           
+       
+
+          </div>
+
+          <div class="rounded-lg shadow-md bg-[#EFEBE3] overflow-hidden pt-4 mx-4 lg:mx-0">
+            <img class="mx-auto bg-white h-40 w-40 rounded-full " src="./c2-assets/delivery.png" alt="">
+
+            <div class="p-4 ">
+              <h4 class="font-bold text-xl pb-3">Fast Delivery</h4>
+              <p class="pb-3">Our Food delivery is one the best food delivery service in Bangladesh. With its fast delivery, wide variety of food, affordable prices, and excellent customer service .</p>
+            </div>
+           
+       
+
+          </div>
+
+          <div class="rounded-lg shadow-md bg-[#EFEBE3] overflow-hidden pt-4 mx-4 lg:mx-0">
+            <img class="mx-auto bg-white h-40 w-40 rounded-full" src="./c2-assets/healthy.png" alt="">
+
+            <div class="p-4 ">
+              <h4 class="font-bold text-xl pb-3">Healthy Products </h4>
+              <p class="pb-3">Eating a wide variety of nutritious foods, including fruit, vegetables, nuts, seeds, and lean protein can help support your overall health.</p>
+            </div>
+           
+       
+
+          </div>
+         
+        </div>
+      </div>
+     </section>
+
+
+
+
+     
+     <section class="popular bg-[#EFEBE3] py-20">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-natural mb-6 pl-5 lg:pl-0">Popular Products</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+
+          <div class="bg-gradient-to-b  ml-10 lg:ml-0 from-emerald-800 to-green-500 text-white rounded-lg flex flex-col justify-between items-center mx-4 lg:mx-0">
+            <h3 class="text-2xl font-semibold pt-4">30% off</h3>
+            <p class="mt-2 text-sm text-center  mx-auto max-w-xs">Discover a world of treats, toys,<br> and essentials handpicked for you.</p>
+            <button  class="mt-4 py-2 px-4 rounded-md font-bold bg-white text-black font-semibold ">Buy Now</button>
+            <img class=" mt-6 w-40 h-auto ml-60 " src="./c2-assets/vegetable-offer.png" alt="">
+          </div>
+
+
+
+         <div class="grid grid-cols-2 md:grid-cols-3 gap-6 col-span-2  mx-4 lg:mx-0">
+
+
+
+          <div class="flex items-center rounded-lg h-28 bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+
+
+          <div class="flex items-center rounded-lg h-28  bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+
+
+          <div class="flex items-center rounded-lg h-28  bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+
+          <div class="flex items-center rounded-lg h-28  bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+
+
+          <div class="flex items-center rounded-lg h-28 bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+
+          <div class="flex items-center rounded-lg h-28 bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+          <div class="flex items-center rounded-lg h-28  bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+          <div class="flex items-center rounded-lg h-28 bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+
+        <div class="hidden lg:inline">
+          <div class="flex items-center rounded-lg h-28  bg-white shadow-lg px-4 py-2
+          md:px-10 lg:py-4 ">
+            <img class="h-16 w-16 object-contain " src="./c2-assets/onion.png" alt="">
+            <div class="ml-4 flex flex-col justify-center">
+              <div class="text-yellow-500 flex items-center font-semibold">
+                <i class="fa-solid fa-star">4.5</i>
+              </div>
+              <h4 class="text-lg font-semibold">Onion 1 KG</h4>
+              <p class="text-gray-600">$39.99</p>
+
+            </div>
+            
+          </div>
+        </div>
+
+         </div>
+          
+        </div>
+      </div>
+
+     </section>
+
+
+     <section class="md:container mx-auto py-8 lg:pl-24 ">
+      <h2 class="text-2xl font-bold text-natural mb-6 pl-5 ml-10 my-8 lg:pl-0">Popular Products</h2>
+        <div class=" lg:flex">
+          
+      <div class="arrival_container  lg:flex lg:pl-24 pl-0 mx-4 lg:mx-0 lg:my-12 my-10 ">
+
+        <div class="bg-[#115414] rounded-lg flex pt-2  ">
+          <div class="lg:pl-8 ">
+            <img class="" src="./c2-assets/dawat-logo.PNG" alt="">
+            <a class="btn bg-[#63B76D] mr-2 px-7 border-green-800 text-white font-bold ml-8 whitespace-nowrap">Cook Exotic Dishes</a>
+            <p class="text-2xl font-bold pt-4 text-white pl-8">Up to 20% off</p>
+          </div>
+          <div class="">
+            <img src="./c2-assets/dawat-mock-up.png" alt="">
+          </div>
+
+        </div>
+
+
+        <div class="lg:pt-3 pt-1 pl-1 lg:pl-24 pl-0 mx-2 lg:mx-0 my-12 lg:my-0  ">
+          <div class="bg-[#102861] rounded-lg flex lg:pt-4 ">
+            <div class="">
+              <img class="" src="./c2-assets/india-gate-logo.png" alt="">
+              <a class="btn bg-[#2A4D97] mr-2 lg:px-7 px-3 border-blue-800 text-white font-bold ml-8">World’s No.1 Rice</a>
+              <p class="text-2xl font-bold pt-4 text-white pl-8">Up to 40% off</p>
+            </div>
+            <div class="">
+              <img src="./c2-assets/india-gate-mock-up.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     </section>
+     </main>
+     <!-- footer -->
+      <footer>
+
+        <section>
+          
+        </section>
+
+
+
+
+      </footer>
+    
+</body>
+</html>
