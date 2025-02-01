@@ -16,7 +16,18 @@
     <style>
         .work-sans{
             font-family: "Work Sans", serif;}
+            
     </style>
+    <!-- <style>
+
+      @media (max-width: 1023px) {
+        body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      }
+   
+    </style> -->
       <script>
         tailwind.config = {
           theme: {
@@ -33,10 +44,10 @@
 <body class="work-sans">
     <!-- header -->
     <header class="">
-        <nav class="md:container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
+        <nav class="md:container mx-auto ">
+            <div class="navbar bg-base-100 flex justify-between lg:flex-row">
+                <div class="navbar-start flex justify-start lg:flex-start">
+                  <!-- <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +74,7 @@
                       </li>
                       <li><a>Item 3</a></li>
                     </ul>
-                  </div>
+                  </div> -->
                   <a class="btn btn-ghost text-xl">
                     <img src="./c2-assets/logo-header.png" alt="">
                   </a>
@@ -75,9 +86,12 @@
                     <li class="hidden lg:inline"><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end ">
+                <div class="navbar-end  ">
+                  <div class="lg:hidden inline text-natural mr-0 text-3xl">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
                 <div class="hidden lg:inline">
-                  <i class="fa-solid fa-magnifying-glass Class mr-4 "></i>
+                  <i class="fa-solid fa-magnifying-glass mr-4 "></i>
                   <i class="fa-solid fa-cart-shopping  mr-4 "></i>
                 <a class="btn  mr-2 px-7 border-green-800 font-bold bg-white ">login</a>
                 <a class="btn bg-natural text-white ">Register</a>
@@ -88,8 +102,40 @@
         <div class="banner bg-gradient-to-b  from-[#FFFFFF] to-[#EFEBE3]">
           <div class="banner_container md:container mx-auto py-0 pt-24">
             <div class=" text-center mb-8">
-                <h1 class="text-4xl md:text-4xl font-bold mb-8 ">Freshness <span class="text-[#179800]">You Can <br>
+                <h1 class="text-4xl lg:text-4xl font-bold mb-8  "><span></span>Freshness <span class="text-[#179800] ">You Can <br>
                     Count</span> On, Prices You’ll Love!</h1>
+                    <style>
+                      @keyframes typing {
+                        from {
+                          width: 0;
+                        }
+                        to {
+                          width: 100%;
+                        }
+                      }
+
+                      @keyframes blink {
+                        50% {
+                          border-color: transparent;
+
+                        }
+                      }
+                      .typing-animation{
+                        display: inline-block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        border-right: 3px solid #179800;
+                        width: 0;
+                      }
+                      @media (min-width: 1024px) {
+                        .typing-animation {
+                          animation: typing 8s steps(40, end) forwards, blink 0.8s infinite;
+                        }
+                        
+                      }
+
+                      
+                    </style>
                 <p class="lg:max-w-xl max-w-sm mx-auto ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
             <div class=" ">
@@ -102,7 +148,10 @@
      <main>
      <section class="md:container mx-auto py-8 lg:pl-24">
       <div class="box_container ">
-        <div class="">
+        <div class="text-center typing-animation">
+          <h3 class="text-2xl md:text-2xl lg:text-4xl text-natural font-bold mb-8 pl-5 lg:pl-0">Services</h3>
+        </div>
+        <div class="lg:hidden">
           <h3 class="text-2xl md:text-2xl lg:text-4xl text-natural font-bold mb-8 pl-5 lg:pl-0">Services</h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
@@ -313,8 +362,8 @@
      </section>
 
 
-     <section class="md:container mx-auto py-8 lg:pl-24 ">
-      <h2 class="text-2xl font-bold text-natural mb-6 pl-5 ml-10 my-8 lg:pl-0">Popular Products</h2>
+     <section class="md:container mx-auto py-8 lg:pl-24 lg:mb-0 mb-0">
+      <h2 class="text-2xl font-bold text-natural mb-6 pl-5 ml-10 my-8 lg:pl-0">Arrival & Offers</h2>
         <div class=" lg:flex">
           
       <div class="arrival_container  lg:flex lg:pl-24 pl-0 mx-4 lg:mx-0 lg:my-12 my-10 ">
@@ -349,12 +398,142 @@
 
 
      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="md:container mx-auto py-8 lg:pl-24 lg:mb-0 mb-52 lg:ml-44">
+      <h2 class="text-2xl font-bold text-natural mb-6 pl-5 ml-10 my-8 lg:pl-0">Arrival Items</h2>
+        <div class=" lg:flex">
+          
+      <div class="arrival_container  lg:flex lg:pl-24 pl-0 mx-4 lg:mx-0 lg:my-12 my-10 ">
+
+        <div class="bg-[#115414] rounded-lg flex pt-2  ">
+          <div class="lg:pl-8 lg:mt-32 ">
+            <img class="" src="./c2-assets/dawat-logo.PNG" alt="">
+            <a class="btn bg-[#63B76D] mr-2 px-7 border-green-800 text-white font-bold ml-8 whitespace-nowrap lg:mt-44">Cook Exotic Dishes</a>
+            <p class="text-2xl font-bold pt-4 text-white pl-8">Up to 20% off</p>
+          </div>
+          <div class="bg-[#115414]">
+            <img src="./c2-assets/nxt.jpg" alt="">
+          </div>
+
+        </div>
+
+
+     
+      </div>
+    </div>
+
+
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      </main>
      <!-- footer -->
       <footer>
 
         <section>
-          
+
+          <div class="aita_main relative">
+
+           <div class="relative " >
+            <div class="bg-[#179800] py-10 px-4 md:px-16 lg:mt-44 mt-96">
+              <div class="lg:w-9/12 w-full mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="mb-4 lg:mt-52 mt-52 ">
+                    <img class="mb-4" src="./c2-assets/logo-footer.png" alt="">
+                    <p class="text-white text-lg font-semibold ">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                  </div>
+                  <div class=" lg:ml-44  lg:ml-4 ml-0 lg:mt-56 mt-10">
+                    <ul class="space-y-4 ">
+                      <li>
+                        <a class="hover:text-orange-600 text-white text-lg font-semibold" href="#">Product</a>
+                      </li>
+                      <li>
+                        <a class="hover:text-orange-600 text-white text-lg font-semibold" href="#">Servicest</a>
+                      </li>
+                      <li>
+                        <a class="hover:text-orange-600 text-white text-lg font-semibold" href="#">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="lg:ml-44 ml-0 lg:mt-72 mt-10">
+                    <h3 class="text-white text-lg font-semibold">Follow Us</h3>
+                    <div class=" lg:mr-10  hover:text-orange-600 text-white text-lg font-semibold">
+                      <i class="fa-brands fa-facebook  mr-4 lg:mr-2"></i>
+                      <i class="fa-brands fa-instagram mr-4 lg:mr-2"></i>
+                      <i class="fa-brands fa-linkedin mr-4 lg:mr-2"></i>
+                      <i class="fa-brands fa-youtube mr-4 lg:mr-2"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+           </div>
+
+           <div class="absolute lg:-top-32 -top-96 lg:w-7/12 w-11/12 lg:left-96 left-1/2 transform -translate-x-1/2 lg:translate-x-0">
+
+            <div class="md:container mx-auto bg-[#EFEBE3] rounded-lg lg:px-7 px-4 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ]">
+              <div class="mt-10 ml-10 mr-20">
+                <img src="./c2-assets/vegetable-busket.png" alt="">
+              </div>
+  
+              <div class="mt-10 mr-10  ">
+                <h3 class=" font-bold text-4xl mb-4 text-center lg:text-left lg:text-black text-natural">Get Grocery News!</h3>
+                <p class="text-lg font-semibold mb-4  text-center lg:text-left">Exclusive training tips, ticks, product deals and more.</p>
+                <div class="mb-4 w-full lg:w-9/12 mx-auto lg:mx-0 ml-4 lg:ml-0">
+                  <input type="text" placeholder="Enter email" class="w-full px-4 py-3 border-none rounded-lg shadow-lg ">
+                </div>
+                <div class=" text-center lg:text-left">
+                  <a class="btn bg-natural text-white mb-4 lg:px-10 px-6">Subscribe</a>
+                </div>
+              </div>
+  
+  
+             </div>
+           </div>
+
+
+
+
+          </div>
+
+
+
         </section>
 
 
